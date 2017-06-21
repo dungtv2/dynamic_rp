@@ -1,4 +1,4 @@
-openerp.dynamic_report_for_qweb = function (instance) {
+openerp.az_dynamic_report_for_qweb = function (instance) {
     var QWeb = instance.web.qweb;
     var _t = instance.web._t;
     var wkhtmltopdf_state;
@@ -143,7 +143,7 @@ workers to print a pdf version of the reports.'), true);
                         size: 'large', //'medium', 'small'
                         buttons: null,//[btnTest],
                     };
-                    dialog.dialog_title ='<a><img src="dynamic_report_for_qweb/static/img/excel.png" class="btnExport" data-type="xls"/></a> &nbsp;' + '<a><img src="dynamic_report_for_qweb/static/img/doc.png" class="btnExport" data-type="docx"/></a>'
+                    dialog.dialog_title ='<a><img src="az_dynamic_report_for_qweb/static/img/excel.png" class="btnExport" data-type="xls"/></a> &nbsp;' + '<a><img src="az_dynamic_report_for_qweb/static/img/doc.png" class="btnExport" data-type="docx"/></a>'
                     dialog.open();
                     var report_name = JSON.parse(params.action).report_name
                     $('.btnExport').click(function () {
